@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<body>
+<h1>Currency calculator</h1>
+
+<p>Select currency to convert from drop-down list.</p>
+<form method="post" enctype=multipart/form-data>
+
+    <label for="currency">Select currency: </label>
+    <select name="currency" id="currency">
+        <option code="USD">USD</option>
+        <option code="AUD">AUD</option>
+        <option code="CAD">CAD</option>
+        <option code="EUR">EUR</option>
+        <option code="HUF">HUF</option>
+        <option code="CHF">CHF</option>
+        <option code="GBP">GBP</option>
+        <option code="JPY">JPY</option>
+        <option code="CZK">CZK</option>
+        <option code="DKK">DKK</option>
+        <option code="NOK">NOK</option>
+        <option code="SEK">SEK</option>
+        <option code="XDR">XDR</option>
+    
+    </select>
+    <br><br>
+    <label for="amount">Put the amount of currency:</label><br>
+    <input type="amount" placeholder= "The number..." name="amount" required><br>
+    <input type="submit" value="Convert">
+</form>
