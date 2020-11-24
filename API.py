@@ -11,13 +11,7 @@ data_dict = data[0]
 bids = {}
 rates = data_dict["rates"]
 for bid in rates:
-    bids.setdefault(bid['code'],bid['bid'])
-
-
-    
-
-
-    
+    bids.setdefault(bid['code'],bid['bid'])    
 
 
 with open("file.csv","w",encoding='utf-8', newline='') as csvfile:
